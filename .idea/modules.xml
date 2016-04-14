@@ -3,8 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AChartSDK/AChartSDK.iml" filepath="$PROJECT_DIR$/AChartSDK/AChartSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AChartSDK/AChartSDK.iml" filepath="$PROJECT_DIR$/AChartSDK/AChartSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShunTianFuPeiHao.iml" filepath="$PROJECT_DIR$/ShunTianFuPeiHao.iml" />
       <module fileurl="file://$PROJECT_DIR$/ShunTianFuStore.iml" filepath="$PROJECT_DIR$/ShunTianFuStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewPagerIndicator_Library/viewPagerIndicator_Library.iml" filepath="$PROJECT_DIR$/viewPagerIndicator_Library/viewPagerIndicator_Library.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewPagerIndicator_Library/viewPagerIndicator_Library.iml" filepath="$PROJECT_DIR$/viewPagerIndicator_Library/viewPagerIndicator_Library.iml" />
     </modules>
   </component>

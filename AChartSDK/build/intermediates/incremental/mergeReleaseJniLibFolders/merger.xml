@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\project\ShunTianFuStore\AChartSDK\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="D:\project\ShunTianFuStore\AChartSDK\src\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\QiAndroidStudioProjects\ShunTianFuPeiHao\AChartSDK\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="E:\QiAndroidStudioProjects\ShunTianFuPeiHao\AChartSDK\src\release\jniLibs"/></dataSet></merger>

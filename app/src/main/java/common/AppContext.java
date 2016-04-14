@@ -14,6 +14,7 @@ import ui.GetFazhiSucessListener;
 
 /**
  * Created by chuanyhu on 2014/8/a.
+ * 齐昕
  */
 public class AppContext extends Application implements GetFazhiSucessListener {
 

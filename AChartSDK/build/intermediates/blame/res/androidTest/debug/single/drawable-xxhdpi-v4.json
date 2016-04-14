@@ -8,6 +8,10 @@
         "source": "E:\\ShuntianfuCompressor\\AChartSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
     },
     {
+        "merged": "E:\\QiAndroidStudioProjects\\ShunTianFuPeiHao\\AChartSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "E:\\QiAndroidStudioProjects\\ShunTianFuPeiHao\\AChartSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\project\\ShunTianFuStore\\AChartSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
         "source": "D:\\project\\ShunTianFuStore\\AChartSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
     }
