@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="welcomeFullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="base_line_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/size_0.5</item>
+        <item name="android:background">@color/bg_cut_line</item>
+    </style>
+
+    <style name="Animation.Toast" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <style name="LoadingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="LoadingProgressDialog" parent="@style/LoadingDialog">
+        <!-- 背景透明   去掉背景色边框也就去掉了 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="settingEdittext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/height_45</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">numberSigned</item>
+        <item name="android:paddingLeft">@dimen/height_6</item>
+        <item name="android:paddingRight">@dimen/height_5</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/setting_text_color</item>
+        <item name="android:textColorHint">@color/login_text_hint</item>
+        <item name="android:textCursorDrawable">@drawable/edittext_cursor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

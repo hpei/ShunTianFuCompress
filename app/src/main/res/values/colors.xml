@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--<color name="colorAccent">#8F77AA</color>-->
+
+
+    <!-- 公共的 -->
+    <color name="tab_main_text_1">#aaa</color>
+    <color name="tab_main_text_2">#74b5f7</color>
+    <color name="tab_top_text_1">#aaa</color>
+    <color name="tab_top_text_2">#000</color>
+    <color name="tab_top2_text_1">#000</color>
+    <color name="tab_top2_text_2">#fff</color>
+    <color name="white">#fff</color>
+    <color name="bg_color">#5f97cca0</color>
+
+    <color name="transparent">#00000000</color>
+    <!-- 透明 -->
+    <color name="bg_cut_line">#dddddd</color>
+    <color name="app_bg_color">#eeeeee</color>
+    <color name="text_color">#555555</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="cart_empty_text">#ABABAB</color>
+    <color name="common_title_right">#fe6256</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="title_bg">#FAFAFA</color>
+    <color name="setting_text_color">#202020</color>
+
+
+    <color name="text_lepu_surpluse">#e55555</color>
+    <color name="login_btn_color">#fb867b</color>
+    <color name="gray_cc">#cccccc</color>
+    <color name="login_text_color">#757575</color>
+    <color name="login_text_hint">#CFCFCF</color>
+    <color name="text_color_97">#979797</color>
+
+    <color name="param_select_bg">#9B30FF</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="yellow">#ffff00</color>
+
+
+</resources>

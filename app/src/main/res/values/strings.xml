@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">顺天府</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_name_values">0123456789abcdefghijklmnopqrstuvwxyz</string>
+    <string name="password_rule">请输入新密码(8-16位数字、字母或特殊字符)</string>
+    <string name="again_password">"请再次输入新密码"</string>
+    <string name="error_net_unconnect">无网络连接，请检测网络设置</string>
+
+    <string name="old_password">"请输入原始密码"</string>
+    <integer name="toast_alpha">50</integer>
+
+</resources>

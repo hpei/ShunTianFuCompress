@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_choose_time"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_40"
+        android:background="@color/white">
+
+        <View style="@style/base_line_style" />
+
+        <TextView
+            android:id="@+id/current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_15"
+            android:text="起始时间："
+            android:textColor="#202020"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/enter_user_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height_20"
+            android:src="@mipmap/enter" />
+
+        <View
+            style="@style/base_line_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_compress_status"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_36"
+        android:layout_below="@+id/rl_choose_time"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_15"
+            android:text="压缩机状态："
+            android:textColor="#202020"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_compress_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_5"
+            android:layout_toRightOf="@+id/tv_status"
+            android:background="@drawable/gray_point" />
+
+        <TextView
+            android:id="@+id/tv_status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_15"
+            android:layout_toRightOf="@+id/iv_compress_status"
+            android:text="除霜器状态："
+            android:textColor="#202020"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_compress_status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_5"
+            android:layout_toRightOf="@+id/tv_status1"
+            android:background="@drawable/gray_point" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height_10"
+            android:text="红-故障 灰-正常 黄-除霜"
+            android:textColor="#979797"
+            android:textSize="11sp" />
+
+        <View
+            style="@style/base_line_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_choose_function"
+        android:layout_below="@+id/rl_compress_status"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="horizontal" />
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/fragment_mainTab_item_progressBar"-->
+    <!--style="?android:attr/progressBarStyleLarge"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="center" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_choose_function"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_3"
+        android:layout_marginLeft="@dimen/height_20"
+        android:layout_marginRight="@dimen/height_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/height_5"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_dianya"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="电压"
+            android:textColor="@drawable/tv_choose_selector"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_dianliu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="电流"
+            android:textColor="@drawable/tv_choose_selector"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_wendu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="末端温度"
+            android:textColor="@drawable/tv_choose_selector"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_gaoya"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="高压"
+            android:textColor="@drawable/tv_choose_selector"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_diya"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="低压"
+            android:textColor="@drawable/tv_choose_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

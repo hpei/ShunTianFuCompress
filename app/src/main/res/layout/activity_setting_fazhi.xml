@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shuntianfu.com.shuntianfucompressor.SettingFazhiActivity">
+
+    <RelativeLayout
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/title_bg">
+
+        <LinearLayout
+            android:id="@+id/common_title_left"
+            android:layout_width="@dimen/height_50"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_left_bg"
+            android:paddingLeft="@dimen/height_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置阀值"
+            android:textColor="#555555"
+            android:textSize="18sp"
+
+            />
+
+
+        <View
+            style="@style/base_line_style"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_title"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="电压阀值："
+                android:textColor="@color/setting_text_color"
+                android:textSize="15sp" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_dianya_fazhi"
+                style="@style/settingEdittext"
+                android:hint="电压高阀值" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/height_10"
+                android:layout_marginTop="@dimen/height_10"
+                android:background="@color/black_overlay" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_dianya_fazhi_low"
+                style="@style/settingEdittext"
+                android:hint="电压低阀值" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15">
+
+            <View
+                style="@style/base_line_style"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="电流阀值："
+                android:textColor="@color/setting_text_color"
+                android:textSize="15sp" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_dianliu_fazhi"
+                style="@style/settingEdittext"
+                android:hint="电流高阀值" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/height_10"
+                android:layout_marginTop="@dimen/height_10"
+                android:background="@color/black_overlay" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_dianliu_fazhi_low"
+                style="@style/settingEdittext"
+
+                android:hint="电流低阀值" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15">
+
+            <View
+                style="@style/base_line_style"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="温度阀值："
+                android:textColor="@color/setting_text_color"
+                android:textSize="15sp" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_wendu_fazhi"
+                style="@style/settingEdittext"
+
+
+                android:hint="温度高阀值"
+
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/height_10"
+                android:layout_marginTop="@dimen/height_10"
+                android:background="@color/black_overlay" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_wendu_fazhi_low"
+                style="@style/settingEdittext"
+                android:hint="温度低阀值"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15">
+
+            <View
+                style="@style/base_line_style"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="高压阀值："
+                android:textColor="@color/setting_text_color"
+                android:textSize="15sp" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_gaoya_fazhi"
+
+                style="@style/settingEdittext"
+                android:hint="高压高阀值"
+
+
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/height_10"
+                android:layout_marginTop="@dimen/height_10"
+                android:background="@color/black_overlay" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_gaoya_fazhi_low"
+
+                style="@style/settingEdittext"
+                android:hint="高压低阀值"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15">
+
+            <View
+                style="@style/base_line_style"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15"
+            android:paddingRight="@dimen/height_15"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="低压阀值："
+                android:textColor="@color/setting_text_color"
+                android:textSize="15sp" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_diya_fazhi"
+                style="@style/settingEdittext"
+
+                android:hint="低压高阀值" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/height_10"
+                android:layout_marginTop="@dimen/height_10"
+                android:background="@color/black_overlay" />
+
+            <ui.ClearEditText
+                android:id="@+id/setting_diya_fazhi_low"
+
+                style="@style/settingEdittext"
+                android:hint="低压低阀值"
+
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/invoice_tip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFBCD"
+
+            android:paddingBottom="7dp"
+            android:paddingLeft="@dimen/height_20"
+
+            android:paddingTop="7dp">
+
+            <ImageView
+                android:id="@+id/attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_4"
+                android:background="@mipmap/attention" />
+
+            <TextView
+                android:id="@+id/wenxintishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10"
+                android:layout_toRightOf="@id/attention"
+                android:text="温馨提示："
+                android:textColor="#E12E40"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wenxintishi"
+                android:layout_marginLeft="@dimen/height_10"
+                android:layout_toRightOf="@+id/attention"
+                android:paddingRight="@dimen/height_10"
+                android:text="制冷温度在-18/-24℃时低压压力值1kg左右\n在-4/4℃时低压压力值在3kg左右"
+                android:textColor="#E12E40"
+                android:textSize="14sp"
+
+
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit_fazhi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_54"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/height_20"
+            android:layout_marginRight="@dimen/height_20"
+            android:layout_marginTop="@dimen/height_15"
+            android:background="@drawable/light_btn_bg_selector"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

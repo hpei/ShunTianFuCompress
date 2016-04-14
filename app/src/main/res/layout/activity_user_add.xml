@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".UserAddActivity">
+
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/title_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_title"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/user_add_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:text="账号:"
+                android:textColor="@color/login_text_color"
+                android:textSize="15sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <ui.ClearEditText
+                    android:id="@+id/user_add_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/height_6"
+                    android:background="@null"
+                    android:hint="请输入用户名"
+                    android:singleLine="true"
+                    android:text=""
+
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_hint"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="14sp"/>
+
+                <View
+                    style="@style/base_line_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="5"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/user_add_pwd_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:text="密码:"
+                android:textColor="@color/login_text_color"
+                android:textSize="15sp"/>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <ui.ClearEditText
+                    android:id="@+id/user_add_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/height_6"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_hint"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="14sp"/>
+
+                <View
+                    style="@style/base_line_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="5"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_add_pwd_layout_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/white"
+            android:orientation="horizontal"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:text="确认密码:"
+                android:textColor="@color/login_text_color"
+                android:textSize="15sp"/>
+
+            <ui.ClearEditText
+                android:id="@+id/user_add_pwd_confirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_45"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/height_6"
+                android:layout_weight="5"
+                android:background="@null"
+                android:hint="请确认密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_hint"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/user_add_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_20"
+            android:layout_marginTop="@dimen/height_10"
+            android:checked="false"
+            android:text="勾选则为管理员"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/user_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_54"
+            android:layout_below="@+id/login_password_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/light_btn_bg_selector"
+            android:text="添加"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
